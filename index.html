@@ -17,7 +17,7 @@
   </head>
   <body class="screenBg" style="color: white; font-family: Arial, Helvetica, sans-serif;" f>
     <div class="row m-0" style="" >
-        <div class="col-12 p-0 col-md-10">
+        <div class="col-12 p-0 col-md-10 p-fixed" >
 
         
         <div class="col-12">
@@ -156,13 +156,17 @@
     </div>
 </div>
     </div>
-    <div class="p-0 col-2 justify-content-end " style="color: white;" >
-    <div class="row m-0">
-      <div class="col-12 d-flex  mt-4" style="font-size: 15px;">
+    <div class="p-0 col-md-2 justify-content-end " style=" height: 100vh; overflow-y: scroll; overflow-x: hidden; color: white; position: sticky; z-index: 12; left: 0px;" >
+    <div class="row m-0" >
+      <div class="col-10 d-flex  mt-4" style="font-size: 15px; ">
        <p>History</p>
        <p style="" class="ps-4">Memory</p>
       </div> 
-      <div class="col-12" id="Results">
+      <div class="col-2 d-flex  mt-4" style="font-size: 15px;">
+        <p class="me-2" onclick="clearStorage()">Clear</p>
+        
+       </div> 
+      <div class="col-12" id="Results" style="overflow: scroll;" >
         
       </div>
     </div>
