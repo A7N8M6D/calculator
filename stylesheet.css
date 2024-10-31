@@ -10,37 +10,42 @@ body {
   box-sizing: border-box;
 }
 
+/* global variable */
+:root {
+  --background-color-primary: rgba(6, 10, 14, 0.904);
+  --background-color-btn: rgba(39, 37, 37, 0.692);
+}
 /* Screen css */
 .screenBg {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-color-primary);
   color: white;
 }
 
 /*Main Border css */
-.Main-Border {
+/* .Main-Border {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.363);
-}
+} */
 
 /* Button Border css */
 .Btn-Border {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 140px;
+  height: 105px;
   padding: 0px;
 }
 
-/* Button Main css */
+/* Button Main */
 .Btn-Main {
-  border: 1px solid rgb(255, 255, 255);
+  margin: 4px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.363);
+  background-color: var(--background-color-btn);
   display: flex;
-  height: 130px;
+  height: 98px;
 
-  width: 95%;
+  width: 390px;
   justify-content: center;
   align-items: center;
 }
