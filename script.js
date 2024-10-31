@@ -51,13 +51,14 @@ function updateDisplay() {
 // Handle button value input
 function getValue(element) {
   const value = element.innerText;
-  
+
   if (value === "C") {
     resetCalculator();
     return;
   }
 
-  if (/^-?\d*\.?\d+$/.test(value)) { // Check if value is a number
+  if (/^-?\d*\.?\d+$/.test(value)) {
+    // Check if value is a number
     if (!operator) {
       operandOne = (operandOne || 0) * 10 + parseInt(value);
       updateScreen(operandOne);
