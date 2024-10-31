@@ -19,10 +19,10 @@ function calculate() {
     case "-":
       result = operandOne - operandTwo;
       break;
-    case "*":
+    case "×":
       result = operandOne * operandTwo;
       break;
-    case "/":
+    case "÷":
       result = operandTwo !== 0 ? operandOne / operandTwo : "Error";
       break;
     default:
@@ -67,7 +67,7 @@ function getValue(element) {
       updateScreen(operandTwo);
     }
     updateDisplay();
-  } else if (["+", "-", "*", "/"].includes(value)) {
+  } else if (["+", "-", "×", "÷"].includes(value)) {
     if (operandOne !== null) {
       operator = value;
       updateDisplay();
@@ -76,6 +76,8 @@ function getValue(element) {
   } else if (value === "=") {
     if (operandOne !== null && operator && operandTwo !== null) {
       calculate();
+      calculationHistory();
+      
     } else {
       alert("Please complete the expression");
     }
@@ -90,4 +92,10 @@ function resetCalculator() {
   result = null;
   updateScreen("");
   updateDisplay();
+}
+
+// History of calculation function
+function calculationHistory()
+{ 
+
 }

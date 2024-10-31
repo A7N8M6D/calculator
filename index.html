@@ -17,63 +17,68 @@
   </head>
   <body class="screenBg" style="color: white;">
     <div class="" style="" >
-      <div class="row p-0 m-0 d-flex justify-content-start align-items-center  ms-1 ">
-        <!-- Title of the Page -->
-         <div class="row m-0  " style="padding-left: 13px; height: 27px; font-size: 13px;">
-           <div class="col-12 p-0 col-md-10 d-flex align-items-center" style="height: 27px;"> 
-            
+        <div class="col-12 p-0 col-md-10">
+
+        
+        <div class="col-12">
+
+            <div class="row p-0 m-0 d-flex justify-content-start align-items-center  ms-1 ">
+                <!-- Title of the Page -->
+                <div class="row m-0  " style="padding-left: 13px; height: 27px; font-size: 13px;">
+           <div class="col-12 d-flex align-items-center" style="height: 27px;"> 
+               
                <p class="m-0">calculator</p>
-           </div>
-         </div>
-         <!-- Menu of the Page -->
+            </div>
+        </div>
+        <!-- Menu of the Page -->
           <section class="row  m-0 "   height: 40px;">
-            <div class="col-12 p-0 col-md-10 d-flex justify-content-start align-items-center" >
+            <div class="col-12 d-flex justify-content-start align-items-center" >
 
                 <i class="fa-solid fa-bars"></i>
                 <p class="m-0 ms-3" style="font-size: 17px; font-weight:500;">
- Standard
+                    Standard
                 </p>
                 <i class="ms-3 fa-solid fa-share"></i>
             </div> 
-          </section>
-          <!-- Operand and Operator Display -->
-          <div
-            class="col-12 p-0 col-md-10 fs-5 d-flex justify-content-end align-items-center"
-            style="color:white; height: 55px"
-          >
-            <span id="Operand-One"></span>
+        </section>
+        <!-- Operand and Operator Display -->
+        <div
+        class="col-12 fs-5 d-flex justify-content-end align-items-center"
+        style="color:white; height: 55px"
+        >
+        <span id="Operand-One"></span>
             <span id="Operator"></span>
             <span id="Operand-Two"></span>
           </div>
         <!-- Display Screen -->
         <div
-          class="col-12 col-md-10 p-0 d-flex Main-Border justify-content-end align-items-start "
-          style="height: 200px; font-size: 90px;"
-          
-          id="Screen"
+        class="col-12  p-0 d-flex Main-Border justify-content-end align-items-start "
+        style="height: 200px; font-size: 90px;"
+        
+        id="Screen"
         ></div>
-       <!-- Option Screen -->
+        <!-- Option Screen -->
         <section class="m-0 row" style="font-size: 13px;">
-         <div class="col-12 p-0 col-md-10 d-flex">
-           <p class="m-0 ms-2">MC</p>
-           <p class="m-0 ms-5">MR</p>
-           <p class="m-0 ms-5" >M+</p>
-           <p class="m-0 ms-5" >M-</p>
-         </div>
+            <div class="col-12 d-flex">
+                <p class="m-0 ms-2">MC</p>
+                <p class="m-0 ms-5">MR</p>
+                <p class="m-0 ms-5" >M+</p>
+                <p class="m-0 ms-5" >M-</p>
+            </div>
         </section>
-
+        
         <!-- Calculator Buttons -->
-        <div class="col-12 col-md-10 mt-1">
-          <div class="row Main-Border">
-            <!-- Row 1 -->
+        <div class="col-12  mt-1">
+            <div class="row Main-Border">
+                <!-- Row 1 -->
+                <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
+                    <div class="Btn-Main">%</div>
+                </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">%</div>
+                <div class="Btn-Main">CE</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">CE</div>
-            </div>
-            <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">C</div>
+                <div class="Btn-Main">C</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
               <div class="Btn-Main">+</div>
@@ -81,43 +86,43 @@
 
             <!-- Row 2 -->
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">1/x</div>
+              <div class="Btn-Main"><sup>1</sup>/x</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">x^2</div>
+              <div class="Btn-Main">x<sup>2</sup></div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">square</div>
+              <div class="Btn-Main"><sup>2</sup>√x</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">/</div>
+                <div class="Btn-Main">÷</div>
             </div>
-
+            
             <!-- Row 3 -->
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
               <div class="Btn-Main">7</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">8</div>
+                <div class="Btn-Main">8</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">9</div>
+                <div class="Btn-Main">9</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">*</div>
+              <div class="Btn-Main">×</div>
             </div>
-
+            
             <!-- Row 4 -->
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">4</div>
+                <div class="Btn-Main">4</div>
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">5</div>
-              <!-- Clear button -->
+                <div class="Btn-Main">5</div>
+                <!-- Clear button -->
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-              <div class="Btn-Main">6</div>
-              <!-- Equals button -->
+                <div class="Btn-Main">6</div>
+                <!-- Equals button -->
             </div>
             <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
               <div class="Btn-Main">-</div>
@@ -126,34 +131,36 @@
                 <div class="Btn-Main">1</div>
               </div>
               <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-                <div class="Btn-Main">2</div>
+                  <div class="Btn-Main">2</div>
               </div>
               <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-                <div class="Btn-Main">3</div>
-              </div>
-              <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-                <div class="Btn-Main">+</div>
-              </div>
-              <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-                <div class="Btn-Main">+/-</div>
-              </div>
-              <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-                <div class="Btn-Main">0</div>
-              </div>
-              <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
-                <div class="Btn-Main">.</div>
-              </div>
-              <div class="col-3 fs-2 Btn-Border"  onclick="getValue(this)">
-                <div style="background-color: rgba(0, 153, 255, 0.808);" class="Btn-Main">=</div>
-              </div>
-          </div>
+                  <div class="Btn-Main">3</div>
+                </div>
+                <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
+                    <div class="Btn-Main">+</div>
+                </div>
+                <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
+                    <div class="Btn-Main">+/-</div>
+                </div>
+                <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
+                    <div class="Btn-Main">0</div>
+                </div>
+                <div class="col-3 fs-2 Btn-Border" onclick="getValue(this)">
+                    <div class="Btn-Main">.</div>
+                </div>
+                <div class="col-3 fs-2 Btn-Border"  onclick="getValue(this)">
+                    <div style="background-color: rgba(0, 153, 255, 0.808);" class="Btn-Main">=</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</div>
+    </div>
+</div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
 
     <script src="script.js"></script>
     <script
